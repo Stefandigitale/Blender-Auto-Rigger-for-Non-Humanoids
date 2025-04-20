@@ -1,22 +1,34 @@
 # Blender-Auto-Rigger-for-Non-Humanoids
 Python-powered automatic rigging system for creatures, mechas, and abstract 3D models in Blender – because not everything moves like a human.
 
-Rigging non-humanoid 3D models (dragons, robots, eldritch horrors) is tedious and poorly supported by existing tools. This project:
-✅ Automates rigging for complex geometries using Python + geometric algorithms
-✅ Saves hours of manual bone placement
-✅ Supports motion transfer between mismatched creatures
-✅ Works inside Blender as a script/add-on
+## Overview
+The Blender Rigging Toolkit is a Python-based toolkit designed to automate the rigging process for various types of 3D models, including creatures, mechas, and abstract shapes. This toolkit leverages Blender's powerful API to streamline the rigging workflow, making it easier for artists and developers to create complex rigs efficiently.
 
-draft key points which i want to reach
-🛠️ Features
-1. Auto-Rigging Core
-Detects natural "joint" positions using mesh curvature analysis (scipy.spatial)
+## Features
+- **Creature Rigging**: Generate rigs specifically tailored for organic models with features like bone creation, skin weight assignment, and constraint application.
+- **Mecha Rigging**: Create mechanical rigs with joint configurations, inverse kinematics (IK) constraints, and movement settings.
+- **Abstract Rigging**: Design rigs for abstract models, including shape creation, movement pattern definitions, and modifier applications.
 
-Generates optimized bone hierarchies with inverse kinematics (IK)
+## Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/blender-rigging-toolkit.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd blender-rigging-toolkit
+   ```
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-Handles multi-limbed, winged, and asymmetrical topologies
+## Usage
+To use the toolkit, run the main script:
+```
+python src/main.py
+```
+Follow the command-line prompts to generate rigs for your models.
 
-3. Dataset Tools
-Generate synthetic training data for ML-assisted joint prediction
-
-Pre-process existing rigs to improve auto-rigging
+## Contribution
+Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure that your code adheres to the project's coding standards and includes appropriate tests.
